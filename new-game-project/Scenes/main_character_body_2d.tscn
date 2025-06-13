@@ -1,0 +1,99 @@
+[gd_scene load_steps=15 format=3 uid="uid://bn8oaffvq7kec"]
+
+[ext_resource type="Script" uid="uid://ckhss5n7tge3x" path="res://Scenes/main_character_body_2d.gd" id="1_aywgv"]
+[ext_resource type="Texture2D" uid="uid://ciakcd7i51kyx" path="res://Delivery Pizza Man Single.png" id="1_yuji0"]
+[ext_resource type="Texture2D" uid="uid://dtdbcxwey7666" path="res://Delivery Pizza Man.png" id="2_aywgv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hasu"]
+atlas = ExtResource("1_yuji0")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2vuu"]
+atlas = ExtResource("2_aywgv")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m82ja"]
+atlas = ExtResource("2_aywgv")
+region = Rect2(400, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glsix"]
+atlas = ExtResource("2_aywgv")
+region = Rect2(800, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slnsj"]
+atlas = ExtResource("2_aywgv")
+region = Rect2(0, 400, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncdyl"]
+atlas = ExtResource("2_aywgv")
+region = Rect2(400, 400, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfpex"]
+atlas = ExtResource("2_aywgv")
+region = Rect2(800, 400, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cg2kj"]
+atlas = ExtResource("2_aywgv")
+region = Rect2(0, 800, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_060cr"]
+atlas = ExtResource("2_aywgv")
+region = Rect2(400, 800, 400, 400)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2hasu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hasu")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2vuu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m82ja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glsix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slnsj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncdyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfpex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cg2kj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_060cr")
+}],
+"loop": true,
+"name": &"Moving",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aywgv"]
+size = Vector2(34, 32)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_aywgv")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(46, 36)
+scale = Vector2(0.205, 0.205)
+sprite_frames = SubResource("SpriteFrames_2hasu")
+animation = &"Default"
+autoplay = "Moving"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(47, 33)
+shape = SubResource("RectangleShape2D_aywgv")
