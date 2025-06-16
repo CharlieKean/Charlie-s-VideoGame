@@ -1,6 +1,5 @@
-[gd_scene load_steps=15 format=3 uid="uid://bn8oaffvq7kec"]
+[gd_scene load_steps=14 format=3 uid="uid://bn8oaffvq7kec"]
 
-[ext_resource type="Script" uid="uid://ckhss5n7tge3x" path="res://Scenes/main_character_body_2d.gd" id="1_aywgv"]
 [ext_resource type="Texture2D" uid="uid://ciakcd7i51kyx" path="res://Delivery Pizza Man Single.png" id="1_yuji0"]
 [ext_resource type="Texture2D" uid="uid://dtdbcxwey7666" path="res://Delivery Pizza Man.png" id="2_aywgv"]
 
@@ -84,16 +83,14 @@ animations = [{
 size = Vector2(34, 32)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_aywgv")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(46, 36)
 scale = Vector2(0.205, 0.205)
 sprite_frames = SubResource("SpriteFrames_2hasu")
-animation = &"Default"
+animation = &"Moving"
 autoplay = "Moving"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(47, 33)
+position = Vector2(0, -4)
 shape = SubResource("RectangleShape2D_aywgv")
