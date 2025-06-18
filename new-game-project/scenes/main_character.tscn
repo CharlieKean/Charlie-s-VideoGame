@@ -3,13 +3,12 @@
 [ext_resource type="Script" uid="uid://d350ug6nvx7fs" path="res://scenes/main_character.gd" id="1_ig48j"]
 [ext_resource type="Texture2D" uid="uid://ciakcd7i51kyx" path="res://Delivery Pizza Man Single.png" id="1_nrcqd"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig48j"]
-radius = 8.0
-height = 16.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig48j"]
+size = Vector2(14.5423, 14.9996)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(52, 84)
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.15, 0.15)
 script = ExtResource("1_ig48j")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -18,4 +17,6 @@ scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_nrcqd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_ig48j")
+position = Vector2(0.179291, -1.30029)
+shape = SubResource("RectangleShape2D_ig48j")
+debug_color = Color(0.940373, 8.66354e-06, 0.615292, 0.42)
