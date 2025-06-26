@@ -1,10 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://blvjb8m0y88ur"]
+[gd_scene load_steps=3 format=3 uid="uid://blvjb8m0y88ur"]
 
 [ext_resource type="Script" uid="uid://d350ug6nvx7fs" path="res://scenes/main_character.gd" id="1_ig48j"]
 [ext_resource type="Texture2D" uid="uid://ciakcd7i51kyx" path="res://Delivery Pizza Man Single.png" id="1_nrcqd"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig48j"]
-size = Vector2(14.5423, 14.9996)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(52, 84)
@@ -16,7 +13,5 @@ texture_filter = 1
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_nrcqd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.179291, -1.30029)
-shape = SubResource("RectangleShape2D_ig48j")
-debug_color = Color(0.940373, 8.66354e-06, 0.615292, 0.42)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(1.09375, -9.11462, 2.8125, -8.90625, 4.21875, -7.23962, 4.47916, -6.40625, 4.79166, -5.98962, 4.63541, -5.67712, 3.59375, -5.46875, 3.75, -4.84375, 3.75, -4.42712, 3.33334, -3.95837, 3.07291, -3.54169, 1.30209, -3.125, 1.61459, -2.5, 3.22916, -2.55212, 3.59375, -2.13544, 4.47916, -2.44794, 5.15625, -1.97919, 5, -1.35419, 4.375, -1.25, 4.47916, -0.677124, 4.0625, -0.416687, 4.79166, 1.82288, 6.19791, 1.875, 6.30209, 2.39581, 7.03125, 2.96875, 7.29166, 3.48956, 7.03125, 3.69788, 7.1875, 4.47913, 6.92709, 5.46875, 6.19791, 5.9375, 5.20834, 6.09375, 4.11459, 5.625, 3.85416, 4.58331, 2.91666, 4.6875, 2.44791, 4.89581, -1.25, 4.94788, -2.03125, 5.10413, -2.70834, 5.88538, -3.80209, 6.14581, -5.26041, 5.9375, -5.78125, 5.10413, -6.25, 4.63538, -7.13541, 3.85413, -7.08334, 2.8125, -6.14584, 1.5625, -6.19791, 1.04163, -6.09375, -2.08337, -5.83334, -2.5, -2.39584, -2.44794, -1.5625, -3.28125, -0.572906, -3.90625, -1.19791, -4.58337, -1.5625, -5.57294, -1.45834, -6.77087, -0.833344, -8.125, -0.0520935, -8.90625)
