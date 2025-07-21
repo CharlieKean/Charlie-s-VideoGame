@@ -1,5 +1,6 @@
-[gd_scene load_steps=32 format=3 uid="uid://cmt6sufaeto7b"]
+[gd_scene load_steps=33 format=3 uid="uid://cmt6sufaeto7b"]
 
+[ext_resource type="Texture2D" uid="uid://cp6mly5ms7m3g" path="res://pizzeria-building-pixel-art-old-260nw-1039221655-removebg-preview.png" id="1_w48qg"]
 [ext_resource type="Texture2D" uid="uid://cja4cse3y170s" path="res://Water+.png" id="2_5vw27"]
 [ext_resource type="Texture2D" uid="uid://du0n1q78gy0b5" path="res://Car 1.png" id="2_272bh"]
 [ext_resource type="PackedScene" uid="uid://blvjb8m0y88ur" path="res://scenes/main_character.tscn" id="3_1bvp3"]
@@ -13,8 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://071n1c74scr3" path="res://TX Tileset Ground.png" id="5_w48qg"]
 [ext_resource type="Texture2D" uid="uid://c1o114e7tjsxj" path="res://TX Village Props.png" id="6_vivmo"]
 [ext_resource type="Texture2D" uid="uid://d0gvcthd5fcwy" path="res://New Piskel (1).png" id="7_272bh"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h2yge"]
+[ext_resource type="Texture2D" uid="uid://w7fxgupq27vx" path="res://ddmcesu-4ae391a9-73a4-4bc2-b002-78ac3ca7d254-removebg-preview.png" id="15_vivmo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kek77"]
 texture = ExtResource("2_5vw27")
@@ -9378,9 +9378,9 @@ sources/0 = SubResource("TileSetAtlasSource_4c57u")
 
 [node name="Pizza Place" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(9.99868, 632.842)
-scale = Vector2(0.0786058, 0.060491)
-texture = SubResource("CompressedTexture2D_h2yge")
+position = Vector2(13.2444, 634.472)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_w48qg")
 
 [node name="Tree" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -9502,6 +9502,10 @@ texture = ExtResource("3_5vw27")
 position = Vector2(2800, -11.1877)
 texture = ExtResource("4_kek77")
 
+[node name="Car 3" type="Sprite2D" parent="Car 1/Car 3"]
+position = Vector2(-4297.7, 0.370279)
+texture = ExtResource("4_kek77")
+
 [node name="Car 4" type="Sprite2D" parent="Car 1"]
 position = Vector2(3600.02, 0)
 texture = ExtResource("5_4c57u")
@@ -9548,3 +9552,45 @@ polygon = PackedVector2Array(195.643, 637.637, 195.08, 638.099, 193.212, 638.159
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(-49, 0)
 polygon = PackedVector2Array(195.643, 637.637, 195.08, 638.099, 193.212, 638.159, 192.63, 638.541, 192.549, 639.043, 192.449, 639.324, 200.042, 639.364, 200.142, 638.601, 199.198, 638.5, 198.274, 637.898, 197.129, 637.657)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-129, 0)
+polygon = PackedVector2Array(171.149, 637.504, 170.638, 638.136, 168.086, 638.16, 167.187, 638.597, 167.333, 639.083, 167.284, 639.327, 175.451, 639.351, 175.353, 638.549, 173.701, 638.063, 172.437, 637.504)
+
+[node name="Arrow" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(37.1231, 627.209)
+scale = Vector2(0.019, 0.015)
+texture = ExtResource("15_vivmo")
+
+[node name="Arrow2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(297.137, 541.88)
+scale = Vector2(0.019, 0.015)
+texture = ExtResource("15_vivmo")
+flip_h = true
+
+[node name="Arrow6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(436.137, 580.88)
+scale = Vector2(0.019, 0.015)
+texture = ExtResource("15_vivmo")
+flip_h = true
+
+[node name="Arrow3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(309.123, 513.209)
+scale = Vector2(0.019, 0.015)
+texture = ExtResource("15_vivmo")
+
+[node name="Arrow4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(433.123, 539.209)
+scale = Vector2(0.019, 0.015)
+texture = ExtResource("15_vivmo")
+
+[node name="Arrow5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(177.123, 603.209)
+scale = Vector2(0.019, 0.015)
+texture = ExtResource("15_vivmo")
