@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 25
 const JUMP_VELOCITY = -50
-const GRAVITY = 300.0
+const GRAVITY = 275.0 
 const MAX_JUMPS = 2  # Allows single + double jump
 
 var jumps_left = MAX_JUMPS
