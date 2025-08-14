@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://blvjb8m0y88ur"]
 
 [ext_resource type="Script" uid="uid://d350ug6nvx7fs" path="res://scenes/main_character.gd" id="1_ig48j"]
-[ext_resource type="Texture2D" uid="uid://ciakcd7i51kyx" path="res://Delivery Pizza Man Single.png" id="1_nrcqd"]
+[ext_resource type="Texture2D" uid="uid://ciakcd7i51kyx" path="res://Terrain and Objects/Delivery Pizza Man Single.png" id="1_nrcqd"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(52, 84)
