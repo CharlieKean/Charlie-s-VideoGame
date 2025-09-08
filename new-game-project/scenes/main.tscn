@@ -10300,7 +10300,6 @@ texture = ExtResource("9_pm3ni")
 sources/0 = SubResource("TileSetAtlasSource_4c57u")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vivmo"]
-load_path = "res://.godot/imported/New Piskel (1).png-aa190bd7eaf77cd10e10a600010083f1.ctex"
 
 [node name="Node" type="Node"]
 
