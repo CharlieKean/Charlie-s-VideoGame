@@ -1,7 +1,8 @@
-[gd_scene load_steps=38 format=3 uid="uid://cmt6sufaeto7b"]
+[gd_scene load_steps=39 format=3 uid="uid://cmt6sufaeto7b"]
 
 [ext_resource type="Texture2D" uid="uid://d0ga1od8j17yv" path="res://Terrain and Objects/download (1).jpg" id="1_jkv2x"]
 [ext_resource type="Texture2D" uid="uid://cp6mly5ms7m3g" path="res://Terrain and Objects/pizzeria-building-pixel-art-old-260nw-1039221655-removebg-preview.png" id="2_jbj1t"]
+[ext_resource type="Texture2D" uid="uid://jlp84ls7gspf" path="res://Terrain and Objects/brown-solid-color-background-zinnwaldite-260nw-2293967379.jpg" id="2_muem4"]
 [ext_resource type="Texture2D" uid="uid://bgb4xtv6cgwuk" path="res://Terrain and Objects/tree7.png" id="3_muem4"]
 [ext_resource type="Texture2D" uid="uid://cja4cse3y170s" path="res://Terrain and Objects/Water+.png" id="4_dp3eg"]
 [ext_resource type="Texture2D" uid="uid://bugjr22keqoja" path="res://Terrain and Objects/Enviroment.png" id="5_0ld40"]
@@ -10309,6 +10310,12 @@ offset_top = 422.0
 offset_right = 1148.0
 offset_bottom = 640.0
 texture = ExtResource("1_jkv2x")
+
+[node name="Cave BG" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(789.937, 570.515)
+scale = Vector2(0.904486, 0.520201)
+texture = ExtResource("2_muem4")
 
 [node name="Pizza Place" type="Sprite2D" parent="."]
 texture_filter = 1
